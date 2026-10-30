@@ -1,0 +1,41 @@
+.section-1-service {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1d2b29;
+  height: 600px;
+}
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-1-service img {
+  width: 570px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.section-1-service h2 {
+  font-family:
+    futura-pt, "system-ui", "SF Mono", "DejaVu Sans Mono", "Roboto Mono",
+    "Courier New", Courier, monospace;
+  font-feature-settings: normal;
+
+  font-optical-sizing: auto;
+  font-size: 40px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  color: #66d7d1;
+}
+.parag-service {
+  font-family:
+    Mulish, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  height: 104px;
+  line-height: 26px;
+  color: #f7b1ab;
+}

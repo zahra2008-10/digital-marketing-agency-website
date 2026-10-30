@@ -1,0 +1,197 @@
+/* ******************************************************************* */
+
+/* ================================
+   OUR WORK HERO
+================================ */
+
+.section-1-work {
+  background-color: #1d2b29;
+  text-align: center;
+  padding: 100px 7% 70px;
+  color: white;
+}
+
+.label-work {
+  color: #66d7d1;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.section-1-work h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 55px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin: 0 auto 25px;
+  max-width: 750px;
+}
+
+.text-work {
+  color: #aebdbb;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ================================
+   WORK CARDS SECTION
+================================ */
+
+.section-1-work + section {
+  background-color: #1d2b29;
+  padding: 20px 7% 100px;
+}
+
+/* The div that contains all cards */
+.section-1-work + section > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* ================================
+   SINGLE CARD
+================================ */
+
+.section-1-work + section > div > div {
+  background-color: #162522;
+  border: 1px solid rgba(102, 215, 209, 0.18);
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.section-1-work + section > div > div:hover {
+  transform: translateY(-8px);
+  border-color: rgba(102, 215, 209, 0.5);
+}
+
+/* ================================
+   CARD IMAGE
+================================ */
+
+.section-1-work + section > div > div > div:first-child {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.section-1-work + section > div > div > div:first-child img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.section-1-work + section > div > div:hover img {
+  transform: scale(1.05);
+}
+
+/* ================================
+   CARD TEXT
+================================ */
+
+.section-1-work + section > div > div > span {
+  display: block;
+  color: #66d7d1;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 20px 20px 5px;
+}
+
+.section-1-work + section > div > div > span::before {
+  content: " ";
+}
+
+/* Project title */
+.section-1-work + section > div > div > span + p {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 20px 8px;
+}
+
+/* Category */
+.section-1-work + section > div > div > p:nth-of-type(1) {
+  color: #66d7d1;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0 20px 15px;
+}
+
+/* Description */
+.section-1-work + section > div > div > p:nth-of-type(2) {
+  color: #aebdbb;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 20px 25px;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+  .section-1-work {
+    padding: 80px 6% 60px;
+  }
+
+  .section-1-work h1 {
+    font-size: 45px;
+  }
+
+  .section-1-work + section {
+    padding: 20px 6% 80px;
+  }
+
+  .section-1-work + section > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+  .section-1-work {
+    padding: 65px 6% 50px;
+  }
+
+  .section-1-work h1 {
+    font-size: 36px;
+    letter-spacing: -0.8px;
+  }
+
+  .text-work {
+    font-size: 14px;
+  }
+
+  .section-1-work + section {
+    padding: 15px 6% 60px;
+  }
+
+  .section-1-work + section > div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-1-work + section > div > div > div:first-child {
+    height: 240px;
+  }
+
+  .section-1-work + section > div > div > span + p {
+    font-size: 23px;
+  }
+}
