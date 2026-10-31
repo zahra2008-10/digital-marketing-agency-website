@@ -6,7 +6,6 @@ import Contact from "./pages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Service from "./pages/Service";
 
-
 function App() {
   return (
     <>
@@ -20,7 +19,6 @@ function App() {
           <Route path="/our work" element={<OurWork />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        
       </BrowserRouter>
     </>
   );

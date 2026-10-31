@@ -32,7 +32,7 @@ function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: easeOut }}
             >
-              3Navigation
+              Navigation
             </motion.h4>
             <ul>
               <motion.li

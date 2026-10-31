@@ -77,3 +77,152 @@
   max-width: 600px;
   margin-top: 7px;
 }
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .section-about {
+    height: auto;
+    min-height: 600px;
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .section-about h1 {
+    font-size: 44px;
+  }
+
+  .text-about {
+    max-width: 650px;
+  }
+
+  .section-2-about {
+    height: auto;
+    padding: 80px 40px;
+    gap: 50px;
+  }
+
+  .section-2-about img {
+    width: 45%;
+    height: auto;
+  }
+
+  .section-2-about h2 {
+    font-size: 40px;
+  }
+
+  .section-2-about p {
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .section-about {
+    min-height: 550px;
+    height: auto;
+    padding: 70px 25px;
+    gap: 1rem;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .section-about h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .text-about {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 550px;
+  }
+
+  .section-about button {
+    width: 180px;
+    height: 60px;
+    margin-top: 25px;
+  }
+
+  /* Section 2 */
+
+  .section-2-about {
+    flex-direction: column;
+    height: auto;
+    padding: 70px 25px;
+    gap: 45px;
+    text-align: center;
+  }
+
+  .section-2-about img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 7px;
+  }
+
+  .section-2-about h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+  }
+
+  .section-2-about p {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .section-about {
+    padding: 60px 20px;
+  }
+
+  .section-about h1 {
+    font-size: 32px;
+  }
+
+  .text-about {
+    font-size: 14px;
+  }
+
+  .section-about button {
+    width: 160px;
+    height: 55px;
+    font-size: 14px;
+  }d 
+
+  .section-2-about {
+    padding: 60px 20px;
+    gap: 35px;
+  }
+
+  .section-2-about h2 {
+    font-size: 30px;
+  }
+
+  .section-2-about p {
+    font-size: 14px;
+  }
+
+  .section-2-about img {
+    width: 100%;
+  }
+}
