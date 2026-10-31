@@ -26,7 +26,7 @@ function Footer() {
             </motion.p>
           </div>
 
-          <div c2lassName="footer-div">
+          <div className="footer-div">
             <motion.h4
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
