@@ -2,6 +2,8 @@ import menu from "./menu";
 import "./Header.css";
 import { useState } from "react";
 import { easeOut, motion } from "motion/react";
+
+import { NavLink } from "react-router-dom";
 function Header() {
   const [item, setItem] = useState(false);
   return (
@@ -28,7 +30,7 @@ function Header() {
             {menu.map((items) => {
               return (
                 <motion.li whileHover={{ scale: 1.2 }} key={items.id}>
-                  <a href={items.link}>{items.name}</a>
+                  <NavLink to={items.link}> {items.name}</NavLink>
                 </motion.li>
               );
             })}
